@@ -45,9 +45,8 @@ class MainActivity : AppCompatActivity() {
         buttonAddOption = binding.btnAddOption
         radioGroupOptions = binding.radioGroupOptions
         // Set onClickListener for the button
-        binding.btnAddOption.setOnClickListener { addOption() }
+        buttonAddOption.setOnClickListener { addOption() }
 
-        setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -55,10 +54,10 @@ class MainActivity : AppCompatActivity() {
         }
         imageView = findViewById(R.id.imageView)
 
-        val captureButton: Button = findViewById(R.id.btnCaptureImage)
+        val captureButton: Button = binding.btnCaptureImage
         captureButton.setOnClickListener { captureImage(it) }
 
-        val uploadButton: Button = findViewById(R.id.btnUploadImage)
+        val uploadButton: Button = binding.btnUploadImage
         uploadButton.setOnClickListener{ uploadImage(it) }
     }
 
