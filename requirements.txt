@@ -1,2 +1,6 @@
 Flask
 Gunicorn
+torch
+ultralytics
+werzkeug
+opencv-python
