@@ -14,7 +14,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 
 # Load the model
-model_path = r"D:\Projects\last\best (1).pt"  # Update with your actual model path
+model_path = r"./best (1).pt"  # Update with your actual model path
 model = YOLO(model_path)
 
 
