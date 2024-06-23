@@ -131,7 +131,7 @@ def uploaded_file(filename):
 def output_file(filename):
     return send_from_directory(app.config['OUTPUT_FOLDER'], filename)
 
-if __name__ == '__main__':
-    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+#     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+#     app.run(debug=True)
